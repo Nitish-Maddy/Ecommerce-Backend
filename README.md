@@ -1,4 +1,4 @@
-<![CDATA[<div align="center">
+<div align="center">
 
 # 🛒 TBS Veda — E-Commerce Platform
 
@@ -189,73 +189,73 @@ The production bundle is output to the `dist/` folder, ready to be deployed to a
 ## 📁 Project Structure
 
 ```
-📦 TBS-Veda/
-├── 📂 Backend/                    # Express.js REST API
-│   ├── 📂 api/                    # API modules (domain-driven)
-│   │   ├── 📂 admin/              #   Admin management
-│   │   ├── 📂 brand/              #   Brand CRUD
-│   │   ├── 📂 cart/               #   Shopping cart
-│   │   ├── 📂 category/           #   Product categories
-│   │   ├── 📂 coupon/             #   Discount coupons
-│   │   ├── 📂 middleware/         #   Shared middleware (auth, etc.)
-│   │   ├── 📂 newsletter/         #   Email subscriptions
-│   │   ├── 📂 notifications/      #   Notification system
-│   │   ├── 📂 order/              #   Order management
-│   │   ├── 📂 product/            #   Product CRUD & search
-│   │   ├── 📂 review/             #   Product reviews
-│   │   ├── 📂 setting/            #   Site settings
-│   │   ├── 📂 subcategory/        #   Subcategory management
-│   │   ├── 📂 user/               #   User profiles & addresses
-│   │   └── 📂 wishlist/           #   Wishlist management
-│   ├── 📂 auth/                   # Authentication module
-│   │   ├── 📂 controllers/        #   Auth logic
-│   │   ├── 📂 middleware/         #   JWT verification
-│   │   ├── 📂 models/            #   Auth-related models
-│   │   ├── 📂 routes/            #   Auth endpoints
-│   │   └── 📂 services/          #   Auth services
-│   ├── 📂 Payment/               # Razorpay integration
-│   │   ├── 📂 controllers/       #   Payment logic
-│   │   ├── 📂 model/             #   Payment models
-│   │   ├── 📂 routes/            #   Payment endpoints
-│   │   └── 📂 services/          #   Payment services
-│   ├── 📂 config/                # Database connection
-│   ├── 📄 server.js              # Express app entry point
-│   ├── 📄 package.json           # Backend dependencies
-│   └── 📄 .cpanel.yml            # cPanel deployment config
+TBS-Veda/
+├── Backend/                        # Express.js REST API
+│   ├── api/                        # API modules (domain-driven)
+│   │   ├── admin/                  #   Admin management
+│   │   ├── brand/                  #   Brand CRUD
+│   │   ├── cart/                   #   Shopping cart
+│   │   ├── category/              #   Product categories
+│   │   ├── coupon/                #   Discount coupons
+│   │   ├── middleware/            #   Shared middleware (auth, etc.)
+│   │   ├── newsletter/           #   Email subscriptions
+│   │   ├── notifications/        #   Notification system
+│   │   ├── order/                #   Order management
+│   │   ├── product/              #   Product CRUD & search
+│   │   ├── review/               #   Product reviews
+│   │   ├── setting/              #   Site settings
+│   │   ├── subcategory/          #   Subcategory management
+│   │   ├── user/                 #   User profiles & addresses
+│   │   └── wishlist/             #   Wishlist management
+│   ├── auth/                      # Authentication module
+│   │   ├── controllers/           #   Auth logic
+│   │   ├── middleware/            #   JWT verification
+│   │   ├── models/                #   Auth-related models
+│   │   ├── routes/                #   Auth endpoints
+│   │   └── services/              #   Auth services
+│   ├── Payment/                   # Razorpay integration
+│   │   ├── controllers/           #   Payment logic
+│   │   ├── model/                 #   Payment models
+│   │   ├── routes/                #   Payment endpoints
+│   │   └── services/              #   Payment services
+│   ├── config/                    # Database connection
+│   ├── server.js                  # Express app entry point
+│   ├── package.json               # Backend dependencies
+│   └── .cpanel.yml                # cPanel deployment config
 │
-├── 📂 src/                        # React frontend source
-│   ├── 📂 app/
-│   │   ├── 📂 components/        # Reusable UI components
-│   │   │   ├── 📂 ui/            #   Radix-based design system (48 components)
-│   │   │   ├── 📂 figma/         #   Figma-imported components
-│   │   │   ├── 📄 Navbar.tsx     #   Three-tier navigation bar
-│   │   │   ├── 📄 Footer.tsx     #   Site footer with links & payment icons
-│   │   │   ├── 📄 ProductCard.tsx#   Product display card
-│   │   │   ├── 📄 HeroSection.tsx#   Homepage hero carousel
-│   │   │   └── ...               #   And more
-│   │   ├── 📂 pages/             # Route-level page components
-│   │   │   ├── 📂 account/       #   Account dashboard pages (9 pages)
-│   │   │   ├── 📄 Home.tsx       #   Landing page
-│   │   │   ├── 📄 Shop.tsx       #   Product listing
-│   │   │   ├── 📄 ProductDetail.tsx # Product detail page
-│   │   │   ├── 📄 Cart.tsx       #   Shopping cart
-│   │   │   ├── 📄 Checkout.tsx   #   Checkout flow
-│   │   │   └── ...               #   And more (17 pages)
-│   │   ├── 📂 context/           # React Context providers
-│   │   │   ├── 📄 AuthContext.tsx #   Authentication state
-│   │   │   └── 📄 ShopContext.tsx #   Shopping state (cart, wishlist)
-│   │   ├── 📂 services/          # API client layer
-│   │   │   └── 📄 api.ts         #   Centralized API service
-│   │   ├── 📂 data/              # Static / seed data
-│   │   └── 📄 App.tsx            # Root component & routes
-│   ├── 📂 styles/                # Global styles & theme
-│   └── 📄 main.tsx               # Application entry point
+├── src/                            # React frontend source
+│   ├── app/
+│   │   ├── components/            # Reusable UI components
+│   │   │   ├── ui/                #   Radix-based design system (48 components)
+│   │   │   ├── figma/             #   Figma-imported components
+│   │   │   ├── Navbar.tsx         #   Three-tier navigation bar
+│   │   │   ├── Footer.tsx         #   Site footer with links & payment icons
+│   │   │   ├── ProductCard.tsx    #   Product display card
+│   │   │   ├── HeroSection.tsx    #   Homepage hero carousel
+│   │   │   └── ...                #   And more
+│   │   ├── pages/                 # Route-level page components
+│   │   │   ├── account/           #   Account dashboard pages (9 pages)
+│   │   │   ├── Home.tsx           #   Landing page
+│   │   │   ├── Shop.tsx           #   Product listing
+│   │   │   ├── ProductDetail.tsx  #   Product detail page
+│   │   │   ├── Cart.tsx           #   Shopping cart
+│   │   │   ├── Checkout.tsx       #   Checkout flow
+│   │   │   └── ...                #   And more (17 pages)
+│   │   ├── context/               # React Context providers
+│   │   │   ├── AuthContext.tsx    #   Authentication state
+│   │   │   └── ShopContext.tsx    #   Shopping state (cart, wishlist)
+│   │   ├── services/              # API client layer
+│   │   │   └── api.ts             #   Centralized API service
+│   │   ├── data/                  # Static / seed data
+│   │   └── App.tsx                # Root component & routes
+│   ├── styles/                    # Global styles & theme
+│   └── main.tsx                   # Application entry point
 │
-├── 📂 public/                     # Static assets (logo, etc.)
-├── 📄 index.html                  # HTML shell
-├── 📄 vite.config.ts              # Vite + Tailwind + proxy config
-├── 📄 package.json                # Frontend dependencies
-└── 📄 .gitignore                  # Git exclusion rules
+├── public/                         # Static assets (logo, etc.)
+├── index.html                      # HTML shell
+├── vite.config.ts                  # Vite + Tailwind + proxy config
+├── package.json                    # Frontend dependencies
+└── .gitignore                      # Git exclusion rules
 ```
 
 ---
@@ -433,4 +433,3 @@ This project is licensed under the **ISC License**.
 ⭐ Star this repo if you found it helpful!
 
 </div>
-]]>
