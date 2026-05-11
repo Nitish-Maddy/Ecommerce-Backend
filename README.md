@@ -420,11 +420,6 @@ For other hosting providers (Railway, Render, DigitalOcean, etc.), ensure:
 
 ---
 
-## 📄 License
-
-This project is licensed under the **ISC License**.
-
----
 
 <div align="center">
 
